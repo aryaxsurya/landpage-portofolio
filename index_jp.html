@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Arya Surya — Webアプリ開発・システム構築</title>
+  <meta name="description" content="Arya Surya — フルスタック＆インフラエンジニア。船橋在住。13年以上の日本での実務経験。予約システム・Webアプリ開発・中小企業のデジタル化支援。"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    body { font-family: 'Inter', 'Noto Sans JP', sans-serif; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<!-- NAV -->
+<header>
+  <div class="nav">
+
+    <!-- BRAND -->
+    <div class="brand">
+      <div class="logo">AS</div>
+
+      <div>
+        <div class="brand-name">Arya Surya</div>
+        <div class="brand-sub">
+          Webエンジニア・インフラエンジニア
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="nav-right">
+
+      <!-- LANGUAGE SWITCH -->
+      <div class="top-lang-switch">
+        <a href="index.html">🇮🇩 ID</a>
+        <a href="index_en.html">🇬🇧 EN</a>
+        <span>🇯🇵 JP</span>
+      </div>
+
+      <!-- NAVIGATION -->
+      <nav>
+
+        <button
+          class="menu-toggle"
+          onclick="toggleMenu()"
+          aria-label="メニュー">
+          ☰
+        </button>
+
+        <ul id="menu">
+          <li><a href="#about">プロフィール</a></li>
+          <li><a href="#services">サービス</a></li>
+          <li><a href="#skills">スキル</a></li>
+          <li><a href="#works">実績</a></li>
+          <li>
+            <a href="#contact" class="nav-cta">
+              お問い合わせ
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-orb orb1"></div>
+    <div class="hero-bg-orb orb2"></div>
+    <div class="wrap hero-inner">
+      <div class="hero-left">
+        <div class="hero-badge" data-aos="fade-up">
+          <span class="badge-dot"></span> 新規案件受付中
+        </div>
+        <h1 data-aos="fade-up" data-aos-delay="60">
+          お店のデジタル化を、<br>
+          <span class="accent-text">一人でまるごと</span><br>
+          サポートします
+        </h1>
+        <p data-aos="fade-up" data-aos-delay="120">
+          船橋在住のフルスタック＆インフラエンジニア。<strong>富士通・MUFG</strong>での13年以上の実務経験をもとに、地域の中小企業・個人事業主向けにWebアプリの開発・導入・サポートを提供しています。
+        </p>
+        <div class="cta-row" data-aos="fade-up" data-aos-delay="180">
+          <a class="btn" href="#contact">無料相談はこちら</a>
+          <a class="ghost" href="#services">サービスを見る</a>
+        </div>
+        <div class="hero-stats" data-aos="fade-up" data-aos-delay="240">
+          <div class="stat"><span class="stat-num">13年+</span><span class="stat-label">日本での実務経験</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><span class="stat-num">3社</span><span class="stat-label">大手日系企業での実績</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><span class="stat-num">月額</span><span class="stat-label">継続サポートあり</span></div>
+        </div>
+      </div>
+      <div class="hero-right" data-aos="fade-left" data-aos-delay="100">
+        <div class="profile-card">
+          <div class="profile-glow"></div>
+          <img src="assets/images/avatar.jpg" alt="Arya Surya" class="profile-img">
+          <div class="profile-name">Arya Surya</div>
+          <div class="profile-title">Webアプリ開発・システム構築</div>
+          <div class="profile-location">📍 船橋市在住</div>
+          <div class="profile-tags">
+            <span>Linux</span><span>AWS</span><span>Node.js</span><span>Laravel</span><span>WordPress</span>
+          </div>
+          <div class="profile-actions">
+            <a class="ghost" href="mailto:aryaxsurya@gmail.com">メール</a>
+            <a class="ghost" href="#">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAIN POINTS (Japan-specific) -->
+  <section class="section-pain">
+    <div class="wrap">
+      <div class="section-label" data-aos="fade-up">こんなお悩みはありませんか？</div>
+      <div class="pain-grid">
+        <div class="pain-item" data-aos="fade-up" data-aos-delay="0">
+          <div class="pain-icon">📞</div>
+          <p>予約はすべて<strong>電話対応</strong>で、スタッフの負担が大きい</p>
+        </div>
+        <div class="pain-item" data-aos="fade-up" data-aos-delay="60">
+          <div class="pain-icon">🌐</div>
+          <p>ホームページが<strong>古くてスマホで見づらい</strong></p>
+        </div>
+        <div class="pain-item" data-aos="fade-up" data-aos-delay="120">
+          <div class="pain-icon">📋</div>
+          <p>注文・予約の管理が<strong>紙やLINEで煩雑</strong></p>
+        </div>
+        <div class="pain-item" data-aos="fade-up" data-aos-delay="180">
+          <div class="pain-icon">💻</div>
+          <p>ITのことを頼める<strong>身近な専門家がいない</strong></p>
+        </div>
+      </div>
+      <div class="pain-arrow" data-aos="fade-up">↓</div>
+      <div class="pain-solution" data-aos="fade-up">
+        <strong>それを解決するのが私の仕事です。</strong><br>
+        開発から導入・サポートまで、すべてお任せください。
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section-services">
+    <div class="wrap">
+      <div class="section-label" data-aos="fade-up">提供サービス</div>
+      <h2 data-aos="fade-up" data-aos-delay="40">できること・提供できること</h2>
+      <p class="section-sub" data-aos="fade-up" data-aos-delay="80">
+        小さなホームページから複雑なWebシステムまで、一人で対応できます。
+      </p>
+      <div class="services-grid">
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-icon">📅</div>
+          <h3>オンライン予約システム</h3>
+          <p>美容院・クリニック・スタジオ向け。お客様が24時間予約できるシステムをスタッフのスケジュール管理も含めて構築します。</p>
+          <ul class="service-list">
+            <li>リアルタイムのカレンダー管理</li>
+            <li>自動確認メール送信</li>
+            <li>管理者ダッシュボード</li>
+          </ul>
+          <div class="service-price">初期費用 ¥80,000〜 / 月額 ¥8,000〜</div>
+        </div>
+
+        <div class="service-card featured" data-aos="fade-up" data-aos-delay="60">
+          <div class="service-badge">ご相談多数</div>
+          <div class="service-icon">🛠️</div>
+          <h3>Webアプリ開発（カスタム）</h3>
+          <p>注文管理・顧客ポータル・会員管理など、お店の業務に合わせたオリジナルシステムを一から設計・開発します。</p>
+          <ul class="service-list">
+            <li>業務課題のヒアリングから</li>
+            <li>開発・テスト・本番導入まで</li>
+            <li>導入後の操作説明・サポート込み</li>
+          </ul>
+          <div class="service-price">初期費用 ¥100,000〜 / 月額 ¥10,000〜</div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="120">
+          <div class="service-icon">🌐</div>
+          <h3>ホームページ制作・リニューアル</h3>
+          <p>スマホ対応・高速表示・SEO対策済みのプロフェッショナルなホームページをWordPressまたはカスタムHTMLで制作します。</p>
+          <ul class="service-list">
+            <li>レスポンシブデザイン</li>
+            <li>Google Maps連携</li>
+            <li>更新・管理方法の説明付き</li>
+          </ul>
+          <div class="service-price">¥50,000〜 / 月額サポート ¥5,000〜</div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="180">
+          <div class="service-icon">☁️</div>
+          <h3>サーバー・インフラ構築</h3>
+          <p>Linuxサーバーの構築・設定からAWSへのデプロイまで対応。安定・安全・コスト効率の良いインフラを設計します。</p>
+          <ul class="service-list">
+            <li>AWS環境構築・最適化</li>
+            <li>セキュリティ設定</li>
+            <li>バックアップ・監視設定</li>
+          </ul>
+          <div class="service-price">¥80,000〜 / 月額監視 ¥8,000〜</div>
+        </div>
+
+      </div>
+
+      <div class="services-note" data-aos="fade-up">
+        💡 すべてのサービスに<strong>無料初回相談</strong>と<strong>3ヶ月サポート</strong>が含まれています。<br>
+        まずはお気軽にお問い合わせください。
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section-about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div data-aos="fade-right">
+          <div class="section-label">プロフィール</div>
+          <h2>技術と、ビジネスの両方を理解するエンジニア</h2>
+          <p>船橋在住のフルスタック＆インフラエンジニアです。2013年から日本の大手企業（富士通・MUFG/日立）でインフラ運用・開発に携わり、<strong>13年以上の実務経験</strong>を積んできました。</p>
+          <p>現在は、その経験を活かして<strong>地域の中小企業・個人事業主</strong>のデジタル化を支援しています。「ITは難しい」と感じているオーナー様でも安心してお任せいただけるよう、導入から操作説明・アフターサポートまで一貫して対応します。</p>
+          <p>技術的な品質はもちろん、<strong>納期厳守・丁寧なコミュニケーション・わかりやすい説明</strong>を大切にしています。</p>
+          <div class="about-points">
+            <div class="point"><span>✓</span> 日本語・インドネシア語・英語対応可</div>
+            <div class="point"><span>✓</span> 関東エリア内は直接訪問での打ち合わせ可</div>
+            <div class="point"><span>✓</span> 導入後の継続サポートあり</div>
+            <div class="point"><span>✓</span> 初回相談・デモ無料</div>
+          </div>
+        </div>
+        <div data-aos="fade-left">
+          <h3>技術スタック</h3>
+          <div class="skills-grid">
+            <div class="skill-item"><i class="devicon-html5-plain colored"></i><span>HTML / CSS</span></div>
+            <div class="skill-item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+            <div class="skill-item"><i class="devicon-laravel-plain colored"></i><span>Laravel</span></div>
+            <div class="skill-item"><i class="devicon-wordpress-plain colored"></i><span>WordPress</span></div>
+            <div class="skill-item"><i class="devicon-linux-plain colored"></i><span>Linux</span></div>
+            <div class="skill-item"><i class="devicon-amazonwebservices-plain-wordmark colored"></i><span>AWS</span></div>
+            <div class="skill-item"><i class="devicon-apache-plain colored"></i><span>Apache / Nginx</span></div>
+            <div class="skill-item"><i class="devicon-bash-plain colored"></i><span>Bash</span></div>
+            <div class="skill-item"><i class="devicon-ansible-plain colored"></i><span>Ansible</span></div>
+            <div class="skill-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+            <div class="skill-item"><i class="devicon-oracle-original colored"></i><span>Oracle DB</span></div>
+            <div class="skill-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOW -->
+  <section id="skills" class="section-flow">
+    <div class="wrap">
+      <div class="section-label" data-aos="fade-up">ご依頼の流れ</div>
+      <h2 data-aos="fade-up" data-aos-delay="40">シンプルな4ステップ</h2>
+      <div class="flow-steps">
+        <div class="flow-step" data-aos="fade-up" data-aos-delay="0">
+          <div class="flow-num">01</div>
+          <h3>無料相談</h3>
+          <p>まずはお気軽にご連絡ください。現状の課題やご要望をお聞きし、最適な解決策をご提案します。</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step" data-aos="fade-up" data-aos-delay="60">
+          <div class="flow-num">02</div>
+          <h3>デモ・お見積り</h3>
+          <p>実際に動くデモをご覧いただき、費用・スケジュールをご提案。ご納得いただいてから契約します。</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step" data-aos="fade-up" data-aos-delay="120">
+          <div class="flow-num">03</div>
+          <h3>開発・納品</h3>
+          <p>週次で進捗をご報告。本番稼働前に操作説明を行い、スムーズにスタートできるようサポートします。</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step" data-aos="fade-up" data-aos-delay="180">
+          <div class="flow-num">04</div>
+          <h3>継続サポート</h3>
+          <p>導入後も月額でサポート継続。システムの更新・トラブル対応・機能追加などにも対応します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="works" class="section-works">
+    <div class="wrap">
+      <div class="section-label" data-aos="fade-up">職務経歴</div>
+      <h2 data-aos="fade-up" data-aos-delay="40">大手日系企業での13年以上の実績</h2>
+      <div class="exp-list">
+        <div class="exp-item" data-aos="fade-up" data-aos-delay="0">
+          <div class="exp-period">2013年12月 — 2017年3月</div>
+          <div class="exp-content">
+            <div class="exp-company">日本郵便 / 富士通</div>
+            <div class="exp-role">インフラ運用エンジニア</div>
+            <p>日本郵便の基幹システムインフラの運用・保守を担当。大規模ミッションクリティカルシステムの監視・トラブルシューティング・性能改善を実施。</p>
+          </div>
+        </div>
+        <div class="exp-item" data-aos="fade-up" data-aos-delay="60">
+          <div class="exp-period">2017年4月 — 2018年11月</div>
+          <div class="exp-content">
+            <div class="exp-company">Qubitous Co., LTD / 富士通</div>
+            <div class="exp-role">インフラ保守担当</div>
+            <p>エンタープライズシステムのインフラ保守・開発。自動化ツールの導入、監視システムの構築、プロアクティブなシステム改善を担当。</p>
+          </div>
+        </div>
+        <div class="exp-item" data-aos="fade-up" data-aos-delay="120">
+          <div class="exp-period">2018年12月 — 2023年10月</div>
+          <div class="exp-content">
+            <div class="exp-company">MUFG / UFJ銀行 IT本部 / 日立</div>
+            <div class="exp-role">インフラ開発エンジニア</div>
+            <p>世界最大規模の金融機関MUFGのシステムインフラ開発・運用を担当。最高水準のセキュリティ・信頼性・可用性が求められる環境で実務経験を積む。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="section-cta">
+    <div class="wrap">
+      <div class="cta-banner" data-aos="fade-up">
+        <div class="cta-banner-orb"></div>
+        <h2>まずは無料でご相談ください</h2>
+        <p>「どんなシステムが必要か分からない」という状態でも大丈夫です。<br>現状の課題をお聞きして、最適なご提案をします。</p>
+        <a class="btn btn-large" href="#contact">無料相談を申し込む →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section-contact">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div data-aos="fade-right">
+          <div class="section-label">お問い合わせ</div>
+          <h2>お気軽にご連絡ください</h2>
+          <p>ご質問・ご相談・お見積りのご依頼など、何でもお気軽にどうぞ。24時間以内にご返信します。</p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <span class="contact-icon">✉️</span>
+              <a href="mailto:aryaxsurya@gmail.com">aryaxsurya@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <span>船橋市、千葉県</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🤝</span>
+              <span>関東エリア内は直接打ち合わせ可</span>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-left">
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label>お名前</label>
+              <input type="text" placeholder="山田 太郎" required>
+            </div>
+            <div class="form-group">
+              <label>メールアドレス</label>
+              <input type="email" placeholder="info@example.com" required>
+            </div>
+            <div class="form-group">
+              <label>業種・お店の種類</label>
+              <select>
+                <option value="">選択してください</option>
+                <option>歯科・クリニック</option>
+                <option>美容院・ネイルサロン</option>
+                <option>エステ・マッサージ</option>
+                <option>工務店・リフォーム</option>
+                <option>学習塾・スクール</option>
+                <option>飲食店</option>
+                <option>ヨガ・フィットネス</option>
+                <option>その他</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>お問い合わせ内容</label>
+              <textarea rows="4" placeholder="例：予約管理をオンライン化したい、ホームページをリニューアルしたいなど" required></textarea>
+            </div>
+            <button type="submit" class="btn" style="width:100%;justify-content:center;">送信する →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <div class="logo">AS</div>
+      <span>Arya Surya</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
