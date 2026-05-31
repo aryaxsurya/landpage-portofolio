@@ -12,7 +12,7 @@
 
 ## 🔗 Live Demo
 
-> **[aryaxsurya.sie](https://[aryaxsurya.github.io/portfolio](https://aryaxsurya.site/index_en.html)**
+> **[aryaxsurya.site](https://aryaxsurya.site/index_en.html)**
 
 ---
 
